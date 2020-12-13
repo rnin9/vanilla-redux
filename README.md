@@ -20,5 +20,10 @@
  - subscribe란?
   - store 내의 변화를 알게 해준다!
 
-- type 지정하는 이유? 
+- Action type 지정하는 이유? 
  - javascript가 오류(오타)를 쉽게 찾아낼 수 있도록 하기위함
+
+- Mutation X  ex) state.push('string')
+  - 새로운 state를 생성해서 return해야 한다!
+  - 변경이 저장되지않는 mutate 함수를 사용하면 안되며, filter와 같은 새로운 array를 만들어내는 함수를 사용!
+   - state는 읽기 전용이므로,
